@@ -15,6 +15,7 @@ Download release and put it to your server resource folder and ensure it in serv
 
 ## Config
 * Put your API KEY in config.lua (ApiKey = "Your Key HERE") 
+
 *Optional* :
 - change model (based on your plan), voice, speed to your liking (currently it is set for all clients , will make functionality for switching voice per user soon)
 
