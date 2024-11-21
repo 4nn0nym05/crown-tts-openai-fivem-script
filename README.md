@@ -27,3 +27,5 @@
 ```- Logging + webhooks```
 
 ```- Passing emotes to the text so character can perform emotes as they speak (so they are not just standing like a statues)```
+
+``` - Permission (since its billed by usage we want to disable this resource for ppl that dont need it) ```
