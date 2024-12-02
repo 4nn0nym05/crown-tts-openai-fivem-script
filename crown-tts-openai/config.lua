@@ -3,7 +3,7 @@ Config = {
     -- OpenAI Configuration
     OpenAI = {
         ApiKey =
-        "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",
+        "YOURKEYHERE",
         Model = "tts-1",
         Voice = "nova", -- Options: alloy, echo, fable, onyx, nova, shimmer
         Speed = "1.0",  -- 0.25 - 4.0
