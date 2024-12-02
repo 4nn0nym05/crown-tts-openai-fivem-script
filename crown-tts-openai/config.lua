@@ -30,7 +30,7 @@ Config = {
         TextScale = 0.35,
         TextFont = 0,
         TextColor = { r = 255, g = 255, b = 255, a = 255 },
-        IndicatorText = "Mluví znakovou řečí...",
+        IndicatorText = "Speaking...",
         IndicatorHeight = 1.0 -- Height above player
     },
     -- Animations
