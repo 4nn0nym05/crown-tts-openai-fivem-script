@@ -5,8 +5,10 @@
 - changing range
   ```
 
-## Standalone script
-```You only need paid OpenAI API its not that much it depends on how many users will be using TTS```
+## Dependencies
+```Paid OpenAI API its not that much it depends on how many users will be using TTS```
+```MM_RADIO https://github.com/SOH69/mm_radio   only if you need functionality with radio, I might do more radios later if there is demand```
+
 
 
 ## How to Install
