@@ -1,4 +1,7 @@
-# crown-tts-openai-fivem-script
+# OpenAI API TTS Fivem script for speech impeded user
+* Script thats giving ability to speak for your speech impeded players *
+
+  
 ```Script that will OpenAI API for text to speech. Mainly made for speech impeded users so they could basically talk.
 - Text to speech using OPENAI
 - changing volume
