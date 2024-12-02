@@ -10,8 +10,12 @@
 <body>
 <div id="container">
     <div class="input-container">
+        <div class="radio-status" id="radioStatus">Not on radio</div>
         <input type="text" id="textInput" maxlength="200">
-        <button onclick="submitText()" id="sendButton">Send</button>
+        <div class="button-container">
+            <button onclick="submitText(false)" id="sendButton">Send</button>
+            <button onclick="submitText(true)" id="radioButton" disabled>Radio</button>
+        </div>
     </div>
 </div>
 <div id="speaking-text"></div>

@@ -2,7 +2,8 @@
 Config = {
     -- OpenAI Configuration
     OpenAI = {
-        ApiKey = "Your key HERE",
+        ApiKey =
+        "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",
         Model = "tts-1",
         Voice = "nova", -- Options: alloy, echo, fable, onyx, nova, shimmer
         Speed = "1.0",  -- 0.25 - 4.0
@@ -13,7 +14,7 @@ Config = {
     Audio = {
         DefaultRange = 20.0,
         DefaultVolume = 2.0,
-        MinVolume = 0.5,
+        MinVolume = 0.1,
         CharactersPerSecond = 15 -- Used for duration calculation
     },
 
@@ -26,24 +27,47 @@ Config = {
 
     -- Visual Settings
     Visual = {
-        TextScale = 0.45,
+        TextScale = 0.35,
         TextFont = 0,
-        TextColor = {r = 1, g = 1, b = 1, a = 1},
-        IndicatorText = "Speaking ...",
+        TextColor = { r = 255, g = 255, b = 255, a = 255 },
+        IndicatorText = "Mluví znakovou řečí...",
         IndicatorHeight = 1.0 -- Height above player
+    },
+    -- Animations
+    Animations = {
+        Normal = {
+            Dict = "anim@amb@casino@brawl@fights@argue@",
+            Name = "arguement_loop_mp_m_brawler_01",
+            Flag = 49
+        },
+        Radio = {
+            Dict = "random@arrests",
+            Name = "generic_radio_chatter",
+            Flag = 49
+        }
     },
 
     -- UI Settings
     UI = {
         MaxInputLength = 200,
-        InputPlaceholder = "Input text...",
-        ButtonText = "Speak",
+        InputPlaceholder = "Enter text for TTS...",
+        ButtonText = "Send",
         Font = "Fira Sans"
+    },
+
+    -- Radio Settings
+    Radio = {
+        Enabled = true,
+        DefaultChannel = 1,
+        MaxChannel = 100,
+        RangeOverride = 10000.0, -- Large range for radio
+        Command = "ttsradio",
+        UsePMA = true
     },
 
     -- Debug
     Debug = {
         Enabled = false,
-        PrintResponses = false -- prints in server console
+        PrintResponses = false
     }
 }

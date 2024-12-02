@@ -1,10 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
 
-name 'fivem-tts-openaiAPI'
+name 'fivem-tts'
 description 'Text to Speech system using OpenAI API'
-author 'joker5928'
 version '1.0.0'
+author 'Your Name'
 
 shared_scripts {
     'config.lua'

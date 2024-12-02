@@ -19,7 +19,21 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
+    flex-direction: column;
     gap: 10px;
+}
+
+.radio-status {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.radio-status.active {
+    background-color: rgba(76, 175, 80, 0.3);
 }
 
 #textInput {
@@ -38,16 +52,25 @@ body {
     box-shadow: 0 0 0 2px #4CAF50;
 }
 
-#sendButton {
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+#sendButton, #radioButton {
     padding: 12px 24px;
-    background-color: #4CAF50;
     border: none;
     border-radius: 4px;
     color: white;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
     font-family: 'Fira Sans', sans-serif;
+    flex: 1;
+}
+
+#sendButton {
+    background-color: #4CAF50;
 }
 
 #sendButton:hover {
@@ -56,6 +79,24 @@ body {
 
 #sendButton:active {
     background-color: #3d8b40;
+}
+
+#radioButton {
+    background-color: #2196F3;
+}
+
+#radioButton:hover:not(:disabled) {
+    background-color: #1976D2;
+}
+
+#radioButton:active:not(:disabled) {
+    background-color: #1565C0;
+}
+
+#radioButton:disabled {
+    background-color: #90CAF9;
+    cursor: not-allowed;
+    opacity: 0.7;
 }
 
 #speaking-text {
@@ -72,7 +113,7 @@ body {
     z-index: 1000;
 }
 
-::placeholder {
-    color: #666;
-    opacity: 1;
+#speaking-text.radio {
+    background-color: rgba(33, 150, 243, 0.7);
+    border: 1px solid rgba(33, 150, 243, 0.9);
 }
