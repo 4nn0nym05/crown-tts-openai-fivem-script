@@ -4,7 +4,7 @@ game 'gta5'
 name 'fivem-tts'
 description 'Text to Speech system using OpenAI API'
 version '1.0.0'
-author 'Your Name'
+author 'joker5928'
 
 shared_scripts {
     'config.lua'
