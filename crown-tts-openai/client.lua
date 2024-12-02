@@ -191,7 +191,7 @@ Citizen.CreateThread(function()
                             SendNUIMessage({
                                 type = "drawSpeaking",
                                 display = true,
-                                text = data.isRadio and "Píše text do vysílačky..." or Config.Visual.IndicatorText,
+                                text = data.isRadio and "Speaking(radio)..." or Config.Visual.IndicatorText,
                                 x = x,
                                 y = y,
                                 isRadio = data.isRadio
